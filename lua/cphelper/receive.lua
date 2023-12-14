@@ -4,10 +4,10 @@ local uv = vim.loop
 local M = {}
 
 function M.receive()
-    print("Listening on port 27121")
+    print("Listening on port 12172")
     local buffer = ""
     M.server = uv.new_tcp()
-    M.server:bind("127.0.0.1", 27121)
+    M.server:bind("127.0.0.1", 12172)
     M.server:listen(128, function(err)
         assert(not err, err)
         local client = uv.new_tcp()

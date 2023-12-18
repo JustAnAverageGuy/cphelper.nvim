@@ -11,7 +11,7 @@ return {
         cpp = [[.]] .. sep .. [[cpp.out]],
         java = "java solution.java",
         lua = "lua solution.lua",
-        python = "python solution.py",
+        python = "pypy solution.py",
         rust = [[.]] .. sep .. [[rust.out]],
         kotlin = "java -jar solution.jar",
         javascript = "node solution.js",
